@@ -7,23 +7,24 @@
   },
   "favicon": "/favicon.svg",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
+    "primary": "#49A0E6",
+    "light": "#76C0F0",
+    "dark": "#1A6FB8",
+    "background": "#FFFFFF",
     "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+      "from": "#49A0E6",
+      "to": "#76C0F0"
     }
   },
   "topbarLinks": [
     {
-      "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "name": "Discord",
+      "url": "https://zerocloud.id/discord"
     }
   ],
   "topbarCtaButton": {
     "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "url": "https://control.zerocloud.id"
   },
   "tabs": [
     {
