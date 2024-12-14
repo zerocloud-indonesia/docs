@@ -67,6 +67,13 @@
       "pages": [
         "bedrock/intro"
       ]
+    },
+    {
+      "group": "Ketentuan Layanan",
+      "pages": [
+        "policies/tos",
+        "policies/privacy"
+      ]
     }
   ],
   "footerSocials": {
