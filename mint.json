@@ -1,7 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
   "name": "ZeroCloud Docs",
-  "theme": "quill",
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
@@ -61,8 +60,7 @@
     {
       "group": "Minecraft Java",
       "pages": [
-        "java/markdown",
-        "java/code",
+        "java/intro",
         "java/images",
         "java/settings",
         "java/navigation",
