@@ -3,7 +3,7 @@
   "name": "ZeroCloud Docs",
   "logo": {
     "dark": "/logo/logo-dark.svg",
-    "light": "/logo/logo-light.svg"
+    "light": "/logo/logo-dark.svg"
   },
   "favicon": "/favicon.svg",
   "colors": {
@@ -35,25 +35,25 @@
     {
       "name": "Documentation",
       "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
+      "url": "https://docs.zerocloud.id"
     },
     {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
+      "name": "Discord Community",
+      "icon": "discord",
+      "url": "https://zerocloud.id/discord"
     },
     {
       "name": "Blog",
       "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "url": "https://zerocloud.id/discord"
     }
   ],
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "Memulai",
       "pages": [
         "introduction",
-        "quickstart",
+        "cara-membeli",
         "development"
       ]
     },
