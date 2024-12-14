@@ -19,51 +19,45 @@ Mau eksplorasi Minecraft dengan mod yang keren? Berikut panduan mudah buat insta
 
 ---
 
-## Cara Instal Mod Fabric di Minecraft (Step-by-Step)
+<Steps>
+    <Step title="Instal Fabric Loader di Server">
+        1. Buka [Fabric Installer](https://fabricmc.net/use/).
+        2. Pilih versi Minecraft yang sesuai dengan server kamu.
+        3. Klik **Install Server** dan pilih direktori tempat server Minecraft kamu berada.
 
-### 1. Instal Fabric Loader di Server
+        <img src="/images/fabricinstall.png" alt="Fabric Installer" style={{ width: '100%', height: 'auto' }} />
 
-1. Buka [Fabric Installer](https://fabricmc.net/use/).
-2. Pilih versi Minecraft yang sesuai dengan server kamu.
-3. Klik **Install Server** dan pilih direktori tempat server Minecraft kamu berada.
+        4. Jalankan file **fabric-server-launch.jar** untuk membuat file dan folder default server Fabric.
+    </Step>
 
-<img src="/images/fabricinstall.png" alt="Fabric Installer" style={{ width: '100%', height: 'auto' }} />
+    <Step title="Download Mod dari Modrinth">
+        1. Buka [Modrinth](https://modrinth.com) untuk mencari mod yang kompatibel dengan Fabric.
 
-4. Jalankan file **fabric-server-launch.jar** untuk membuat file dan folder default server Fabric.
+        <img src="https://cdn-raw.modrinth.com/app-landing/app-screenshot.webp" alt="Modrinth" style={{ width: '100%', height: 'auto' }} />
 
----
+        2. Gunakan filter untuk memilih mod versi Minecraft yang kamu gunakan.
+        3. Klik **Download** dan simpan file .jar mod di komputer kamu.
 
-### 2. Download Mod dari Modrinth
+        <img src="/images/modrinth-home.png" alt="Modrinth Website" style={{ width: '100%', height: 'auto' }} />
 
-1. Buka [Modrinth](https://modrinth.com) untuk mencari mod yang kompatibel dengan Fabric.
+        > **Tips:** Jangan lupa cek dependensi mod di bagian deskripsi Modrinth. Kadang mod membutuhkan library tambahan seperti **Fabric API**.
+    </Step>
 
-<img src="https://cdn-raw.modrinth.com/app-landing/app-screenshot.webp" alt="Modrinth" style={{ width: '100%', height: 'auto' }} />
+    <Step title="Upload Mod ke Server">
+        1. Pastikan server dalam kondisi mati (shutdown).
+        2. Buka **File Manager** di panel server kamu.
+        3. Cari folder **mods**. Kalau belum ada, buat folder baru dengan nama "mods".
+        4. Upload semua file .jar mod (termasuk Fabric API jika diperlukan) ke dalam folder **mods**.
 
-2. Gunakan filter untuk memilih mod versi Minecraft yang kamu gunakan.
-3. Klik **Download** dan simpan file .jar mod di komputer kamu.
+        <img src="/images/mods-folder.png" alt="Folder Mods" style={{ width: '100%', height: 'auto' }} />
+    </Step>
 
-<img src="/images/modrinth-home.png" alt="Modrinth Website" style={{ width: '100%', height: 'auto' }} />
-
-> **Tips:** Jangan lupa cek dependensi mod di bagian deskripsi Modrinth. Kadang mod membutuhkan library tambahan seperti **Fabric API**.
-
----
-
-### 3. Upload Mod ke Server
-
-1. Pastikan server dalam kondisi mati (shutdown).
-2. Buka **File Manager** di panel server kamu.
-3. Cari folder **mods**. Kalau belum ada, buat folder baru dengan nama "mods".
-4. Upload semua file .jar mod (termasuk Fabric API jika diperlukan) ke dalam folder **mods**.
-
-<img src="/images/mods-folder.png" alt="Folder Mods" style={{ width: '100%', height: 'auto' }} />
-
----
-
-### 4. Jalankan Server
-
-1. Restart server untuk mengaktifkan mod yang sudah di-upload.
-2. Buka konsol server dan cek apakah semua mod sudah terdeteksi tanpa error.
-3. Jika berhasil, modifikasi server sudah siap digunakan! 🚀
+    <Step title="Jalankan Server">
+        1. Restart server untuk mengaktifkan mod yang sudah di-upload.
+        2. Buka konsol server dan cek apakah semua mod sudah terdeteksi tanpa error.
+        3. Jika berhasil, modifikasi server sudah siap digunakan! 🚀
+    </Step>
+</Steps>
 
 ---
 
