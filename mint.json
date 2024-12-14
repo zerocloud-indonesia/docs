@@ -57,9 +57,9 @@
       "pages": [
         "java/intro",
         "java/plugin",
-        "java/mods",
-        "java/navigation",
-        "java/reusable-snippets"
+        "java/fabric",
+        "java/forge",
+        "java/network"
       ]
     },
     {
