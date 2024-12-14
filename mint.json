@@ -31,11 +31,6 @@
   },
   "anchors": [
     {
-      "name": "Dokumentasi",
-      "icon": "book-open-cover",
-      "url": "https://docs.zerocloud.id"
-    },
-    {
       "name": "Discord Community",
       "icon": "discord",
       "url": "https://zerocloud.id/discord"
