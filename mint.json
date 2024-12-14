@@ -43,14 +43,18 @@
   ],
   "navigation": [
     {
-      "group": "Memulai",
+      "group": "Tentang ZeroCloud",
       "pages": [
-        "introduction"      ]
+        "introduction",
+        "specs",
+        "ddos"
+      ]
     },
     {
       "group": "Billing ZeroCloud",
       "pages": [
-        "billing/cara-membeli"      ]
+        "billing/cara-membeli"
+      ]
     },
     {
       "group": "Minecraft Java",
@@ -77,9 +81,16 @@
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://linkedin.com/company/mintlify"
+    "discord": "https://discord.gg/25eJtzqsmk",
+    "github": "https://github.com/zerocloud-indonesia",
+    "instagram": "https://instagram.com/zerocloud.id",
+    "website": "https://www.zerocloud.id"
+  },
+  "feedback": {
+    "thumbsRating": true
+  },
+  "search": {
+    "prompt": "Cari di dokumentasi ini..."
   },
   "font": {
   "headings": {
