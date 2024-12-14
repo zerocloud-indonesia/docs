@@ -19,21 +19,19 @@
     {
       "name": "Discord",
       "url": "https://zerocloud.id/discord"
+    },
+    {
+      "name": "Billing",
+      "url": "https://billing.zerocloud.id"
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
+    "name": "Control Panel",
     "url": "https://control.zerocloud.id"
   },
-  "tabs": [
-    {
-      "name": "API Reference",
-      "url": "api-reference"
-    }
-  ],
   "anchors": [
     {
-      "name": "Documentation",
+      "name": "Dokumentasi",
       "icon": "book-open-cover",
       "url": "https://docs.zerocloud.id"
     },
@@ -52,10 +50,12 @@
     {
       "group": "Memulai",
       "pages": [
-        "introduction",
-        "cara-membeli",
-        "development"
-      ]
+        "introduction"      ]
+    },
+    {
+      "group": "Billing ZeroCloud",
+      "pages": [
+        "billing/cara-membeli"      ]
     },
     {
       "group": "Minecraft Java",
@@ -65,12 +65,6 @@
         "java/mods",
         "java/navigation",
         "java/reusable-snippets"
-      ]
-    },
-    {
-      "group": "API Documentation",
-      "pages": [
-        "api-reference/introduction"
       ]
     },
     {
