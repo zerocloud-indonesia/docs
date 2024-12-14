@@ -59,14 +59,14 @@
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Minecraft Java",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "java/markdown",
+        "java/code",
+        "java/images",
+        "java/settings",
+        "java/navigation",
+        "java/reusable-snippets"
       ]
     },
     {
