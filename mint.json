@@ -86,5 +86,13 @@
     "x": "https://x.com/mintlify",
     "github": "https://github.com/mintlify",
     "linkedin": "https://linkedin.com/company/mintlify"
+  },
+  "font": {
+  "headings": {
+    "family": "Plus Jakarta Sans"
+  },
+  "body": {
+    "family": "Plus Jakarta Sans"
   }
+}
 }
