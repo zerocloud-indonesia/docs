@@ -64,6 +64,7 @@
         "java/plugin",
         "java/fabric",
         "java/forge",
+        "java/geyser",
         "java/network"
       ]
     },
