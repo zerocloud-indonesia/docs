@@ -1,37 +1,37 @@
 ---
-title: 'Ping Tinggi? Begini Cara Mengatasinya'
-description: 'Panduan simpel dan santai buat pasang plugin di server Minecraft.'
+title: 'High Ping? Here's How to Fix It'
+description: 'A simple and relaxed guide to fixing high ping is to find out the cause.'
 icon: 'wifi'
 ---
 
-Pernah ngerasain delay pas lagi asyik main Minecraft? 😤 Ping tinggi itu bisa jadi masalah besar, lho. Ping adalah waktu yang dibutuhkan sebuah paket data untuk pergi dari perangkat kamu (klien) ke server Minecraft, dan kembali lagi. Kalau ping kamu masih di bawah **200ms**, itu normal kok, tergantung seberapa jauh jarak server kamu. Tapi kalau ping kamu lebih dari **500ms**, itu tandanya ada yang salah, dan kita harus cari tahu kenapa. 👀
+Ever experienced a delay while enjoying Minecraft? 😤 High ping can be a big problem. Ping is the time it takes for a data packet to travel from your device (client) to the Minecraft server and back again. If your ping is below **200ms**, that's normal, depending on how far your server is. But if your ping is over **500ms**, it means something is wrong, and we need to find out why. 👀
 
-## 🔍 Mencari Penyebab Ping Tinggi
-Langkah pertama untuk mengatasi ping tinggi adalah mencari tahu penyebabnya. Salah satu cara gampangnya adalah buka **Command Prompt** (atau terminal) dan ketik `ping {IP}` (tanpa port). Kamu bisa menemukan IP server di halaman "Console" di panel ZeroCloud, tinggal salin dan tempel. Kalau pingnya tinggi banget, itu artinya ada masalah di antara kamu dan server. Tapi kalau ping normal di Command Prompt tapi tetap tinggi di dalam game, berarti masalahnya ada di server game kamu. 🖥️
+## 🔍 Finding the Cause of High Ping
+The first step to fixing high ping is to find out the cause. One easy way is to open **Command Prompt** (or terminal) and type `ping {IP}` (without the port). You can find the server IP on the "Console" page in the ZeroCloud panel, just copy and paste it. If the ping is very high, it means there is a problem between you and the server. But if the ping is normal in Command Prompt but still high in the game, it means the problem is with your game server. 🖥️
 
 ![Ping Test](https://support.biamp.com/@api/deki/files/861/ping_success.PNG?revision=2)
 
-### ⚠️ Penyebab Umum Ping Tinggi:
-#### 1. **Versi Snapshot:**
-   - Jangan pake versi snapshot yang nggak stabil, deh. Snapshot itu kayak versi beta, sering banget ada bug dan masalah performa. Kalau kamu pake versi snapshot, coba deh update ke versi **stable**, yang udah teruji lebih stabil dan lebih cepat. Kadang masalah ping ini karena bug di versi yang lagi diuji. 🐞
+### ⚠️ Common Causes of High Ping:
+#### 1. **Snapshot Version:**
+   - Don't use unstable snapshot versions. Snapshots are like beta versions, often full of bugs and performance issues. If you are using a snapshot version, try updating to a **stable** version, which is more tested and faster. Sometimes ping issues are due to bugs in the version being tested. 🐞
 
 #### 2. **Network Compression Threshold:**
-   - Di file `server.properties`, ada pengaturan namanya **Network Compression Threshold**. Ini yang ngatur berapa banyak data yang boleh dikirim tanpa dikompresi dulu. Pengaturan default-nya biasanya **256**, jadi kalau kamu nggak yakin, biarkan aja di angka itu. Kalau pengaturannya terlalu rendah atau tinggi, bisa bikin masalah ping. ⚙️
+   - In the `server.properties` file, there is a setting called **Network Compression Threshold**. This controls how much data can be sent without being compressed first. The default setting is usually **256**, so if you're not sure, leave it at that. If the setting is too low or too high, it can cause ping issues. ⚙️
 
-#### 3. **Gangguan Layanan:**
-   - Ping tinggi bisa juga karena masalah di server kami. Cek **status layanan** kami di [link status ZeroCloud](https://status.zerocloud.id) untuk lihat apakah ada gangguan di server. Kalau ada masalah di server kami, biasanya kamu cuma perlu sabar nunggu perbaikan. 🛠️
+#### 3. **Service Disruptions:**
+   - High ping can also be due to issues on our server. Check our **service status** at [ZeroCloud status link](https://status.zerocloud.id) to see if there are any disruptions on the server. If there are issues on our server, you usually just need to wait for the fix. 🛠️
 
 #### 4. **KeepAliveTimeout:**
-   - Kalau kamu sering keluar dari server gara-gara ping tinggi, coba cek pengaturan **KeepAliveTimeout**. Pengaturan ini bisa bikin koneksi server terputus kalau ada timeout terlalu lama. Kami punya artikel khusus soal ini, jadi jangan ragu buat cek dan sesuaikan pengaturan ini. 🔒
+   - If you often get disconnected from the server due to high ping, check the **KeepAliveTimeout** setting. This setting can cause the server connection to drop if there is a long timeout. We have a dedicated article on this, so feel free to check and adjust this setting. 🔒
 
-#### 5. **ISP Lokal dan Jaringan:**
-   - Kadang, masalah ping tinggi bukan dari server, tapi dari ISP lokal kamu. Kalau banyak orang yang lagi online di jaringan yang sama, itu bisa nambahin latency. Coba pakai **VPN** untuk lihat apakah masalahnya bisa teratasi. Kalau masih nggak berubah, coba hubungi ISP kamu. 🌐
+#### 5. **Local ISP and Network:**
+   - Sometimes, high ping issues are not from the server but from your local ISP. If many people are online on the same network, it can increase latency. Try using a **VPN** to see if the issue can be resolved. If it still doesn't change, contact your ISP. 🌐
 
-### 💡 Apa yang Harus Dilakukan Selanjutnya?
-- **Cek Jaringan Kamu:** Kalau ping tinggi terjadi di semua server, mungkin ada masalah dengan koneksi internet kamu. Pastikan kamu pake koneksi yang stabil dan kalau bisa, pakai **koneksi kabel** (Ethernet) daripada WiFi buat mengurangi gangguan. 📶
+### 💡 What to Do Next?
+- **Check Your Network:** If high ping occurs on all servers, there might be an issue with your internet connection. Make sure you use a stable connection and if possible, use a **wired connection** (Ethernet) instead of WiFi to reduce interference. 📶
 
-- **Gunakan VPN:** Kalau ping masih tinggi meski udah cek semua langkah, coba pake **VPN**. VPN bisa mengarahkan trafik lewat jalur lain yang lebih cepat. 🔑
+- **Use a VPN:** If the ping is still high after checking all the steps, try using a **VPN**. A VPN can route traffic through a faster path. 🔑
 
-- **Hubungi Kami:** Kalau kamu udah coba semua cara dan tetap bermasalah, kamu bisa langsung hubungi tim support kami. Kalau kamu pengguna ZeroCloud, kami siap bantu dengan tiket support. Jika bukan, hubungi penyedia hosting kamu untuk bantu cek masalah di sisi mereka. 📩
+- **Contact Us:** If you've tried everything and still have issues, you can contact our support team. If you are a ZeroCloud user, we are ready to help with a support ticket. If not, contact your hosting provider to help check the issue on their side. 📩
 
-Ping yang tinggi bisa banget ganggu pengalaman main, tapi dengan tips-tips di atas, semoga kamu bisa ngegame dengan lancar lagi. Jangan ragu buat tanya kalau ada yang masih bingung! 😎
+High ping can really disrupt your gaming experience, but with the tips above, hopefully, you can game smoothly again. Don't hesitate to ask if you have any questions! 😎

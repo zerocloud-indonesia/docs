@@ -1,86 +1,86 @@
 ---
-title: 'Cara Setting GeyserMC di Server Minecraft!'
-description: 'Panduan simpel buat nyalain GeyserMC di server Spigot atau forknya.'
+title: 'How to Set Up GeyserMC on Your Minecraft Server!'
+description: 'A simple guide to enable GeyserMC on your Spigot or its fork server.'
 icon: 'dice-d6'
 ---
 
-Mau bikin server Minecraft Java kamu bisa dimainkan oleh pemain Bedrock? Gampang banget, kok! Simak panduan setting GeyserMC berikut ini, dijamin simpel dan mudah diikuti. 🚀
+Want to make your Minecraft Java server playable by Bedrock players? It's super easy! Follow this GeyserMC setup guide, guaranteed to be simple and easy to follow. 🚀
 
-## Apa Itu GeyserMC?
+## What is GeyserMC?
 
-**GeyserMC** adalah proxy yang memungkinkan pemain Minecraft Bedrock Edition (pada HP, konsol, atau Windows 10) untuk bermain di server Minecraft Java Edition. Cocok banget buat kamu yang ingin menjangkau lebih banyak pemain.
+**GeyserMC** is a proxy that allows Minecraft Bedrock Edition players (on mobile, console, or Windows 10) to play on Minecraft Java Edition servers. Perfect for those who want to reach more players.
 
-> ⚠️ **Catatan Penting:** GeyserMC tidak mengubah game Minecraft Bedrock menjadi Minecraft Java. GeyserMC hanya bekerja sebagai jembatan untuk koneksi.
-
-***
-
-## Persiapan Sebelum Memulai
-
-1. **Server Versi Spigot atau Fork-nya**: Pastikan server kamu menggunakan [Spigot](https://getbukkit.org/), [Paper](https://papermc.io/), atau [Purpur](https://purpurmc.org/download/purpur/).
-
-2. **GeyserMC Plugin**: Download file .jar dari situs resmi [GeyserMC](https://geysermc.org/). Langkah ini bisa di skip Kalau kamu menggunakan "Plugin Installer" Kami.
-
-3. **Floodgate Plugin (Opsional)**: Kalau mau pemain Bedrock join tanpa akun Microsoft, download [Floodgate](https://geysermc.org/floodgate).
+> ⚠️ **Important Note:** GeyserMC does not convert Minecraft Bedrock into Minecraft Java. GeyserMC only works as a bridge for connection.
 
 ***
 
-## Langkah-Langkah Setting GeyserMC
+## Preparation Before Starting
 
-Yuk, langsung eksekusi! 💻
+1. **Spigot or Its Fork Server**: Make sure your server is using [Spigot](https://getbukkit.org/), [Paper](https://papermc.io/), or [Purpur](https://purpurmc.org/download/purpur/).
+
+2. **GeyserMC Plugin**: Download the .jar file from the official [GeyserMC](https://geysermc.org/) site. This step can be skipped if you use our "Plugin Installer".
+
+3. **Floodgate Plugin (Optional)**: If you want Bedrock players to join without a Microsoft account, download [Floodgate](https://geysermc.org/floodgate).
+
+***
+
+## Steps to Set Up GeyserMC
+
+Let's get started! 💻
 
 <Steps>
-  <Step title="Download Plugin GeyserMC & Floodgate 📥">
-    1. Kunjungi situs [GeyserMC](https://geysermc.org/) dan download file plugin GeyserMC, atau kamu bisa menggunakan "Plugin Installer" Kami :D.
+  <Step title="Download GeyserMC & Floodgate Plugins 📥">
+    1. Visit the [GeyserMC](https://geysermc.org/) site and download the GeyserMC plugin file, or you can use our "Plugin Installer" :D.
 
-    2. Kalau perlu, download juga plugin Floodgate di bagian "Plugin Installer".
+    2. If needed, also download the Floodgate plugin from the "Plugin Installer" section.
 
-    Pastikan kamu download versi yang cocok dengan server kamu.
+    Make sure you download the version that matches your server.
   </Step>
 
-  <Step title="Buat Allocation Baru untuk Port Bedrock ⚙️">
-    1. Masuk ke panel server kamu.
+  <Step title="Create a New Allocation for Bedrock Port ⚙️">
+    1. Log in to your server panel.
 
-    2. Pergi ke bagian **Network** atau **Allocations**.
+    2. Go to the **Network** or **Allocations** section.
 
-    3. Buat allocation baru untuk port Bedrock.
+    3. Create a new allocation for the Bedrock port.
 
-    4. Pastikan port baru ini berbeda dari port Java.
+    4. Make sure this new port is different from the Java port.
 
-    Jika tidak memungkinkan, kamu bisa gunakan port yang sama dengan port Java, tapi atur bind address di file konfigurasi.
+    If not possible, you can use the same port as the Java port but set the bind address in the configuration file.
   </Step>
 
-  <Step title="Upload Plugin ke Server 📤">
-    1. Buka **File Manager** di panel server kamu.
+  <Step title="Upload Plugins to Server 📤">
+    1. Open the **File Manager** in your server panel.
 
-    2. Pergi ke folder **plugins**.
+    2. Go to the **plugins** folder.
 
-    3. Upload file .jar GeyserMC dan Floodgate ke dalam folder tersebut.
+    3. Upload the GeyserMC and Floodgate .jar files into that folder.
 
     <img src="/images/files.png" alt="Plugins Folder" style={{ width: '100%', height: 'auto' }} />
     
-    Langkah ini bisa di skip Kalau kamu menggunakan "Plugin Installer" Kami.
+    This step can be skipped if you use our "Plugin Installer".
   </Step>
 
   <Step title="Restart Server 🔄">
-    Setelah file di-upload, restart server kamu. Plugin GeyserMC dan Floodgate akan otomatis membuat file konfigurasi.
+    After the files are uploaded, restart your server. The GeyserMC and Floodgate plugins will automatically create configuration files.
   </Step>
 
-  <Step title="Konfigurasi GeyserMC ⚙️">
-    1. Buka folder **plugins/Geyser-Spigot**.
+  <Step title="Configure GeyserMC ⚙️">
+    1. Open the **plugins/Geyser-Spigot** folder.
 
-    2. Edit file **config.yml** menggunakan text editor.
+    2. Edit the **config.yml** file using a text editor.
 
-    Hal yang perlu diatur:
+    Things to configure:
 
-    * **bedrock.address**: Biarkan `0.0.0.0` untuk menerima koneksi dari semua IP.
+    * **bedrock.address**: Leave it as `0.0.0.0` to accept connections from all IPs.
 
-    * **bedrock.port**: Isi dengan port yang sudah kamu buat di langkah sebelumnya (default: `19132`).
+    * **bedrock.port**: Fill in with the port you created in the previous step (default: `19132`).
 
-    * **remote.address**: Biarkan `127.0.0.1` jika GeyserMC dan server Java ada di mesin yang sama.
+    * **remote.address**: Leave it as `127.0.0.1` if GeyserMC and the Java server are on the same machine.
 
-    * **remote.port**: Isi dengan port server Java (default: `25565`).
+    * **remote.port**: Fill in with the Java server port (default: `25565`).
 
-    Contoh konfigurasi:
+    Example configuration:
 
     ```yaml
     bedrock:
@@ -92,33 +92,34 @@ Yuk, langsung eksekusi! 💻
       port: 25565
     ```
 
-    Jangan lupa simpan perubahan!
+    Don't forget to save the changes!
   </Step>
 
-  <Step title="Test dan Selesaikan! 🎮">
-    1. Restart server kamu lagi.
+  <Step title="Test and Finish! 🎮">
+    1. Restart your server again.
 
-    2. Pemain Bedrock bisa konek dengan **alamat IP server** dan port Bedrock yang telah kamu atur sebelumnya.
+    2. Bedrock players can connect with the **server IP address** and the Bedrock port you set earlier.
 
-    3. Cek log server untuk memastikan tidak ada error.
+    3. Check the server log to ensure there are no errors.
 
-    Kalau semua beres, server kamu sekarang mendukung pemain Bedrock dan Java. Selamat mencoba! 😊
+    If everything is fine, your server now supports both Bedrock and Java players. Good luck! 😊
   </Step>
 </Steps>
 
 ***
 
-## Tips Tambahan
+## Additional Tips
 
-1. **Floodgate**: Kalau kamu pakai plugin Floodgate, pemain Bedrock bisa langsung join tanpa login akun Microsoft. Cukup aktifkan opsi "auth-type: floodgate" di file **config.yml** GeyserMC.\`\`\`yaml
+1. **Floodgate**: If you use the Floodgate plugin, Bedrock players can join directly without logging into a Microsoft account. Just enable the "auth-type: floodgate" option in the GeyserMC **config.yml** file.
+   ```yaml
    remote:
-   auth-type: floodgate\`\`\`\`\`\````
+   auth-type: floodgate
    ```
 
-2. **Performa Server**: GeyserMC membutuhkan lebih banyak resource dibandingkan server Java biasa. Pastikan server kamu punya spesifikasi yang cukup.
+2. **Server Performance**: GeyserMC requires more resources than a regular Java server. Make sure your server has sufficient specifications.
 
-3. **Support**: Kalau mengalami masalah, cek [dokumentasi resmi GeyserMC](https://wiki.geysermc.org/) atau tanya di komunitas mereka.
+3. **Support**: If you encounter issues, check the [official GeyserMC documentation](https://wiki.geysermc.org/) or ask in their community.
 
 ***
 
-Gampang banget, kan? Kalau masih bingung, jangan ragu tanya di komunitas Minecraft atau hubungi tim support **ZeroCloud**. Good luck dan selamat eksplorasi! 🚀
+Super easy, right? If you're still confused, don't hesitate to ask in the Minecraft community or contact the **ZeroCloud** support team. Good luck and happy exploring! 🚀
