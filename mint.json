@@ -5,6 +5,7 @@
     "dark": "/logo/logo-dark.svg",
     "light": "/logo/logo-light.svg"
   },
+  "theme": "prism",
   "favicon": "/favicon.svg",
   "colors": {
     "primary": "#49A0E6",
@@ -54,7 +55,7 @@
     {
       "group": "Billing ZeroCloud",
       "pages": [
-        "billing/cara-membeli"
+        "billing/how-to-buy"
       ]
     },
     {
@@ -75,7 +76,7 @@
       ]
     },
     {
-      "group": "Ketentuan Layanan",
+      "group": "Terms of Service",
       "pages": [
         "policies/tos",
         "policies/privacy"
@@ -92,7 +93,7 @@
     "thumbsRating": true
   },
   "search": {
-    "prompt": "Cari di dokumentasi ini..."
+    "prompt": "Search on this documentation...."
   },
   "font": {
   "headings": {
